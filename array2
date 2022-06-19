@@ -1,0 +1,12 @@
+int main() {
+  int *p;//point to an integer
+  int (*ptr)[5];//point to an array of 5 integers
+  int arr[5]={1,2,3,4,5};
+  p=arr;//point to 0th element of an array
+  ptr=arr;//points to whole array
+  printf("p=%p,ptr=%p\n",p,ptr);
+  p++;
+  ptr++;//it is pointing to next array but there is next array declared
+  printf("p=%p,ptr=%p\n",p,ptr);
+  return 0;
+}
