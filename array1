@@ -1,0 +1,12 @@
+int main() {
+  int arr[5]={5,10,15,20,25};
+  int i;
+  for(i=0;i<5;i++)
+  {
+    printf("value of arr[%d]=%d\t",i,*(arr+i));//at the address get the value
+    printf("address of arr[%d]=%p\t",i,(arr+i));//address of array
+  }
+    
+
+  return 0;
+}
